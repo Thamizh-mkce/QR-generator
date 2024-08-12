@@ -3,14 +3,7 @@ from PIL import Image
 import cv2
 
 def generate_qr_code(data, filename="qrcode.png", box_size=10, border=4):
-    """
-    Generates a QR code from the provided data and saves it as an image.
-
-    :param data: The data to encode in the QR code (string).
-    :param filename: The filename to save the QR code image (string).
-    :param box_size: The size of each box in the QR code grid (int).
-    :param border: The thickness of the border (int).
-    """
+  
     # Create a QR Code object with specific configuration
     qr = qrcode.QRCode(
         version=1,  # Controls the size of the QR Code
